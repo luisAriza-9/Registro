@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrador</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script defer src="./Java-scrip/main.js"></script>
+</head>
+<body>
+    <header id="opciones">
+        <button id="crear_registro_btn" onclick="CrearRegistro(event)">Crear registro</button>
+        <button id="actualizar_registro_btn">Actualizar registro</button>
+        <button id="eliminar_registro_btn">Eliminar registro</button>
+        <select id="tipo_de_busqueda">
+            <option value="nada">Nada</option>
+            <option value="estado">Estado</option>
+            <option value="formato">Formato</option>
+            <option value="plataforma">Plataforma</option>
+        </select>
+        <input type="text" id="buscador">
+    </header>
+    <main>
+        <h1>Registros</h1>
+        <section id="contenedor_registros">
+        </section>
+    </main>
+</body>
+</html>
