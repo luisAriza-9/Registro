@@ -1,29 +1,169 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrador</title>
-    <link rel="stylesheet" href="./styles.css">
-    <script defer src="./Java-scrip/main.js"></script>
+    <title>Contenido Interactivo</title>
+    <link rel="icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFjUAA4N998VlB01MeWlabrNI5KN2HPaJQgg&s">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-    <header id="opciones">
-        <button id="crear_registro_btn" onclick="CrearRegistro(event)">Crear registro</button>
-        <button id="actualizar_registro_btn">Actualizar registro</button>
-        <button id="eliminar_registro_btn">Eliminar registro</button>
-        <select id="tipo_de_busqueda">
-            <option value="nada">Nada</option>
-            <option value="estado">Estado</option>
-            <option value="formato">Formato</option>
-            <option value="plataforma">Plataforma</option>
-        </select>
-        <input type="text" id="buscador">
-    </header>
-    <main>
-        <h1>Registros</h1>
-        <section id="contenedor_registros">
-        </section>
-    </main>
-</body>
-</html>
+    <nav class="navbar bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light" href="#">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFjUAA4N998VlB01MeWlabrNI5KN2HPaJQgg&s" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                Contenido Interactivo
+            </a>
+        </div>
+    </nav>
+
+    <div id="carrusel" class="carousel slide mt-4" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://proassetspdlcom.cdnstatics2.com/usuaris/blog_entrada/miniatura/thumbs/93aaa18c-fd2c-4709-b7e8-b40d0e9bfb27/d_360_216_crop/124ab347-ba45-400d-a6d2-ef141180d4e5-510x306_10-libros-joyas-ocultas.webp" class="d-block w-100" alt="Slide 1">
+            </div>
+            <div class="carousel-item">
+                <img src="https://i.blogs.es/17d596/diseno-sin-titulo/450_1000.jpeg" class="d-block w-100" alt="Slide 2">
+            </div>
+            <div class="carousel-item">
+                <img src="https://hips.hearstapps.com/es.h-cdn.co/fotoes/images/cinefilia/las-26-mejores-series-de-los-ultimos-26-anos-segun-imdb/77980716-5-esl-ES/Las-26-mejores-series-de-los-ultimos-26-anos-segun-IMDB.jpg?crop=1xw:0.7735568760611206xh;center,top&resize=1200:*" class="d-block w-100" alt="Slide 3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carrusel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carrusel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Registra el contenido de tu gusto</h1>
+        <div class="mb-4">
+            <form id="resourceForm">
+                <div class="mb-3">
+                    <label for="title" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="title" required placeholder="Ingrese el nombre del contenido">
+                </div>
+                <div class="mb-3">
+                    <label for="gender" class="form-label">Género</label>
+                    <select id="gender" class="form-select" required>
+                        <option value="accion">Acción</option>
+                        <option value="aventura">Aventura</option>
+                        <option value="ciencia-ficcion">Ciencia Ficción</option>
+                        <option value="comedia">Comedia</option>
+                        <option value="drama">Drama</option>
+                        <option value="romance">Romance</option>
+                        <option value="terror">Terror</option>
+                        <option value="suspenso">Suspenso</option>
+                        <option value="musical">Musical</option>
+                        <option value="infantil">Infantil</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="plataform" class="form-label">Plataforma</label>
+                    <select id="plataform" class="form-select" required>
+                        <option value="netflix">Netflix</option>
+                        <option value="amazon">Amazon</option>
+                        <option value="disney">Disney+</option>
+                        <option value="magis">Magis+</option>
+                        <option value="kindle">Kindle</option>
+                        <option value="google-play-libros">Google Play Libros</option>
+                        <option value="apple-books">Apple Books</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="state" class="form-label">Estado</label>
+                    <select id="state" class="form-select" required>
+                        <option value="pendiente">Pendiente</option>
+                        <option value="en-progreso">En Progreso</option>
+                        <option value="terminado">Terminado</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="format" class="form-label">Formato</label>
+                    <select id="format" class="form-select" required>
+                        <option value="libro">Libro</option>
+                        <option value="serie">Serie</option>
+                        <option value="pelicula">Película</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="date" class="form-label">Fecha de Terminación</label>
+                    <input type="date" class="form-control" id="date">
+                </div>
+                <div class="mb-3">
+                    <label for="rating" class="form-label">¿Qué calificación le das?</label>
+                    <div id="rating" class="rating" required>
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="review" class="form-label">Reseña</label>
+                    <textarea id="review" class="form-control" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Añadir</button>
+            </form>
+
+            <div class="mt-5">
+                <h3>Recursos Guardados</h3>
+                <ul class="list-group" id="resourceList"></ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5 mb-4">
+        <h3>Modular contenido</h3>
+        <form id="filterForm" class="mb-4">
+            <div class="row mb-3">
+                <div class="col-md-3">
+                    <label for="filterState" class="form-label">Estado</label>
+                    <select id="filterState" class="form-select">
+                        <option value="">Todos</option>
+                        <option value="terminado">Terminado</option>
+                        <option value="en-progreso">En Progreso</option>
+                        <option value="pendiente">Pendiente</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label for="filterFormat" class="form-label">Formato</label>
+                    <select id="filterFormat" class="form-select">
+                        <option value="">Todos</option>
+                        <option value="pelicula">Película</option>
+                        <option value="serie">Serie</option>
+                        <option value="libro">Libro</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label for="filterPlataform" class="form-label">Plataforma</label>
+                    <select id="filterPlataform" class="form-select">
+                        <option value="">Todos</option>
+                        <option value="netflix">Netflix</option>
+                        <option value="amazon">Amazon</option>
+                        <option value="disney">Disney+</option>
+                        <option value="magis">Magis+</option>
+                        <option value="kindle">Kindle</option>
+                        <option value="google-play-libros">Google Play Libros</option>
+                        <option value="apple-books">Apple Books</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label for="searchTitle" class="form-label">Buscar por Título</label>
+                    <input type="text" class="form-control" id="searchTitle" placeholder="Buscar...">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Modular Filtros</button>
+        </form>
+    </div>
+
+    <p id="copy" class="text-center">Contenido Interactivo &copy; 
