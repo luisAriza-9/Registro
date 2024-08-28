@@ -23,7 +23,7 @@ Esta de una decripción
 - Ítem 2
 - Ítem 3
 
-Hecho por [algunapersona](luisAriza-9)
+Hecho por [luisAriza-9](luisAriza-9)
 
 
 
