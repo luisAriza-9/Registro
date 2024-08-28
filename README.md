@@ -1,6 +1,6 @@
 
 # Título
-Esta de una decripción
+Contenido /Interactivo
 
 ## Tabla de contenidos
 | Indice | Titulo  |
@@ -15,13 +15,11 @@ Esta de una decripción
 | 8 |Reseña|
 
 
-### Carrusel
-![imagen logo]()
+### "¿Qué quieres ver o leer?"
+![imagen logo](https://acf.geeknetic.es/imgri/imagenes/auto/2023/5/2/h3o-ahorra-dinero-planificando-ver-tus-series-favoritas.jpg?f=webp)
 
-### Sección 
-- Ítem 1
-- Ítem 2
-- Ítem 3
+
+
 
 Hecho por [luisAriza-9](luisAriza-9)
 
