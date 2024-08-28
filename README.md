@@ -1,3 +1,39 @@
+
+# Título
+Esta de una decripción
+
+## Tabla de contenidos
+| Indice | Titulo  |
+|--|--|
+| 1 | Nombre |
+| 2 | Genero |
+| 3 | Plataforma |
+| 4 | Estado |
+| 5 | Tipo de presentación |
+| 6 | Fecha de Terminación  |
+| 7 |¿Cuántas estrellas se merece?|
+| 8 |Reseña|
+
+
+### Carrusel
+![imagen logo]()
+
+### Sección 
+- Ítem 1
+- Ítem 2
+- Ítem 3
+
+Hecho por [algunapersona](luisAriza-9)
+
+
+
+> [!IMPORTANT]  
+> Debes crear el estado del contenido
+
+
+
+
+
 # Contenido /Interactivo
 
 
