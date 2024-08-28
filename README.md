@@ -19,6 +19,7 @@ Contenido /Interactivo
 ![imagen logo](https://acf.geeknetic.es/imgri/imagenes/auto/2023/5/2/h3o-ahorra-dinero-planificando-ver-tus-series-favoritas.jpg?f=webp)
 
 
+![imagen logo](https://hips.hearstapps.com/es.h-cdn.co/fotoes/images/cinefilia/las-26-mejores-series-de-los-ultimos-26-anos-segun-imdb/77980716-5-esl-ES/Las-26-mejores-series-de-los-ultimos-26-anos-segun-IMDB.jpg?crop=1xw:0.7735568760611206xh;center,top&resize=1200:*)
 
 
 Hecho por [luisAriza-9](luisAriza-9)
@@ -130,8 +131,8 @@ información de la tarjeta de como va el estado del contenido
 **3. JavaScript:**
 
 
-- Escribe el código en `script.js` para manejar la inserción y eliminación de imágenes, la modificación de los detalles de las imágenes y la navegación entre imágenes.
-- Implementa las funciones para agregar nuevas imágenes, eliminar imágenes, mostrar detalles de imágenes y animar los cambios en la galería.
+- Escribe el código en `script.js` para manejar la inserción y eliminación y la modificación de los detalles del contenido que escogiste .
+- Implementa las funciones para agregar cambios en su estado y contenido.
 
 
 ## Entrega del Proyecto
