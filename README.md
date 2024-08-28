@@ -1,4 +1,4 @@
-# Contenido /Interactiva#
+# Contenido /Interactivo
 
 
 ## Descripción del Proyecto
